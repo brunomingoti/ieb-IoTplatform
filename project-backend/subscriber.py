@@ -1,6 +1,7 @@
 # Aquisição, armazenamento e datar csv - Criar um arquivo para cada mês e ir alimentando.
 # quando acabar o mês, criar outro arquivo e começar a alimentar ele. Separar em pastas (mês) e com arquivos csv (dias diferentes)
 
+
 import random
 from datetime import datetime
 import json
