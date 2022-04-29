@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Plataforma IEB 4.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero"> <!-- hero é uma imagem grande no fundo-->
+        <div class="btn-box">
+            <button id="btn1" onclick="openstatus()">Status</button>
+            <button id="btn2" onclick="openuti()">UTI</button>
+            <button id="btn3" onclick="openap()">Atenção primária</button>
+            <button id="btn4" onclick="openlm()">Laboratório de metrologia</button>
+            <button id="btn5" onclick="openalarmes()">Alarmes</button>
+        </div>
+        <div id="content1" class="content">
+            <div class="content-status">
+                <p>Tela de status</p>
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-uti">
+                <p>Tela da UTI</p>
+            </div>
+        </div>
+        <div id="content3" class="content">
+            <div class="content-ap">
+                <p>Tela da atenção primária</p>
+            </div>  
+        </div>
+        <div id="content4" class="content">
+            <div class="content-lm">
+                <p>Tela do laboratório de metrologia</p>
+            </div>
+        </div>
+        <div id="content5" class="content">
+            <div class="content-alarmes">
+                <p>Tela dos alarmes</p>
+            </div>
+        </div>
+    </div>   
+</body>
+
+<script>
+    var content1 = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+    var content4 = document.getElementById("content4");
+    var content5 = document.getElementById("content5");
+
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+    var btn5 = document.getElementById("btn5");
+
+    function openstatus(){
+        content1.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(100%)";
+        content4.style.transform = "translateX(100%)";
+        content5.style.transform = "translateX(100%)";
+        btn1.style.color =" #ff7846";
+        btn2.style.color =" #000";
+        btn3.style.color =" #000";
+        btn4.style.color =" #000";
+        btn5.style.color =" #000";
+    }
+    function openuti(){
+        content2.style.transform = "translateX(0)";
+        content1.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(100%)";
+        content4.style.transform = "translateX(100%)";
+        content5.style.transform = "translateX(100%)";
+        btn2.style.color =" #ff7846";
+        btn1.style.color =" #000";
+        btn3.style.color =" #000";
+        btn4.style.color =" #000";
+        btn5.style.color =" #000";
+
+    }
+    function openap(){
+        content3.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(100%)";
+        content1.style.transform = "translateX(100%)";
+        content4.style.transform = "translateX(100%)";
+        content5.style.transform = "translateX(100%)";
+        btn3.style.color =" #ff7846";
+        btn2.style.color =" #000";
+        btn1.style.color =" #000";
+        btn4.style.color =" #000";
+        btn5.style.color =" #000";
+    }
+    function openlm(){
+        content4.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(100%)";
+        content1.style.transform = "translateX(100%)";
+        content5.style.transform = "translateX(100%)";
+        btn4.style.color =" #ff7846";
+        btn2.style.color =" #000";
+        btn3.style.color =" #000";
+        btn1.style.color =" #000";
+        btn5.style.color =" #000";
+    }
+    function openalarmes(){
+        content5.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(100%)";
+        content4.style.transform = "translateX(100%)";
+        content1.style.transform = "translateX(100%)";
+        btn5.style.color =" #ff7846";
+        btn2.style.color =" #000";
+        btn3.style.color =" #000";
+        btn4.style.color =" #000";
+        btn1.style.color =" #000";
+    }
+
+</script>
